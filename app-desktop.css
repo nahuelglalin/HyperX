@@ -1,0 +1,506 @@
+/* -------------- APP DESKTOP --------------  */
+
+
+* {
+    font-family: 'Changa', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.body.overflowHidden {
+    overflow: hidden;
+}
+
+/* <!-- -------------- Navbar ----------------> */
+
+.navbar {
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 61px;
+    z-index: 10;
+    position: fixed;
+    transition: top 0.8s;
+}
+
+.nav-logo {
+    padding-top: 5px;
+}
+
+.nav-logo:hover {
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+
+}
+
+.a-items {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 22px;
+    background-color: #2f2f32;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+
+.a-items:hover {
+        color: #999;
+}
+
+.subitems.show{
+    display: block;
+    overflow: hidden;
+}
+
+.subitems.hide {
+    display: none;
+}
+
+.subitems{
+    display: none;
+    color: #fff;
+    position: absolute;
+    background-color: #2f2f32;
+    font-size: 18px;
+    list-style: none;
+    padding: 0px 15px 0px 15px;
+}
+
+.subitems li {
+    border-bottom: 1px solid #000;
+    padding: 15px 0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.subitems li:hover {
+    color: #999;
+}
+
+
+.soporte-gamers{
+    display: inline-flex;
+    list-style: none;
+    margin-left: -20px;
+}
+
+.nav-icons {
+    display: inline-flex;
+    color: #999;
+    list-style: none;
+    text-decoration: none;
+}
+
+.fa-globe-americas{
+    text-decoration: none;
+    color: #999;
+    padding: 20px;
+    margin-left: -30%;
+    border-left: 0.5px solid #2f2f32;
+    transition: background-color 0.2s;
+}
+
+.fa-comment {
+    text-decoration: none;
+    color: #999;
+    padding: 20px;
+    margin-left: -30%;
+    border-left: 0.5px solid #2f2f32;
+    border-right: 0.5px solid #2f2f32;
+    transition: background-color 0.2s;
+}
+
+
+.fa-globe-americas:hover {
+    background-color: #404044;
+    cursor: pointer;
+}
+
+.fa-comment:hover {
+    background-color: #404044;
+    cursor: pointer;
+}
+
+.a-soportes {
+    color: #999;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Changa', sans-serif;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.a-soportes:hover {
+    color: white;
+}
+
+.bars-ico {
+    color: #6c6d77;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: color 0.2s;
+}
+
+.bars-ico:hover {
+    color: #999;
+
+}
+.nav-items.show {
+    display: flex;
+}
+.products-inside a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.products-inside a:hover {
+    color: #999;
+}
+
+/* ---------- Principal Article --------- */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+
+.bg-image img{
+    object-position: center center;
+    width: 100%;
+    object-fit: cover;
+    max-height: 78vh;
+}
+
+.bg-responsive, .bg-mobile {
+    display: none;
+}
+
+.info-article {
+    right: 15%;
+    font-family: 'Changa', sans-serif;
+    color: white;
+    position: absolute; 
+    height: 70%;
+    width: 40%;
+    margin: 61px auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.article-inside {
+    display: flex;
+    flex-direction: column;
+}
+
+.alloy {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 10px;
+   
+}
+
+.juega {
+    font-family: sans-serif;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.info-btn {
+    color: #fff;
+    background-color: #a20520;
+    border: none;
+    border-radius: 3px;
+    padding: 12px 30px;
+    font-size: 18px;
+    transition: transform 0.5s;
+    width: 200px;
+}
+
+.info-btn a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.info-btn:hover {
+    background-color: #89041b;
+    cursor: pointer;
+    transform: translateY(-4px)
+}
+
+/* -------------- First Images Section Style -------------- */
+
+.imgsection {
+    display: flex;
+    align-items: center;
+}
+
+.imgsection-inside {
+    margin: 15px 10px 15px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.imgsection-item{
+    margin: 2px 7px;
+    background-color: #f4f4f4;
+    
+}
+
+.imgsection-item:hover {
+    cursor: pointer;
+}
+
+.inner {
+    text-decoration: none;
+}
+
+.item-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.item-img img {
+    width: 100%;
+    height: 12.5em;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.item-img img:hover {
+    transform: scale(1.1);
+}
+
+
+.imgsection-item h5{
+    font-size: 20px;
+    margin: 18px 25px 0px;
+    background-color: #f4f4f4;
+    color: black;
+    padding-bottom: 15px
+}
+
+.imgsection-item p{
+    color: #585858;
+    background-color: #f4f4f4;
+    font-size: .875em;
+    padding: 0px 25px 10px;
+}
+
+
+
+/* -------------- Middle Text Section -------------- */
+.more-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    padding: 20px 0;
+}
+
+.more-info:hover{
+    cursor: default;
+    
+}
+
+.more-info h2{
+    padding: 0 20px;
+    text-align: center;
+    color: black;
+    font-size: 1.9em;
+    font-weight: 500;
+}
+
+/* -------------- Second IMG Section -------------- */
+
+.hero {
+    padding: 0 20px;
+    margin: 0 2.5%;
+}
+
+.hero-inside {
+    display: inline-flex;
+
+}
+
+.hero-item {
+    overflow: hidden;
+    margin: 0 -9%;
+    justify-content: center;
+    text-align: center;
+}
+
+
+a:nth-child(1) > div{
+    clip-path: polygon(0 0,80% 0,100% 100%,0 100%);
+}
+
+a:nth-child(2) > div{
+    clip-path: polygon(0 0,80% 0,100% 100%,20% 100%);
+  
+}
+
+a:nth-child(3) > div{
+    clip-path: polygon(0 0,100% 0,100% 100%,20% 100%);
+}
+
+
+
+.hero-item img{
+   
+    min-height: 250px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: 0 -60px;
+    transition: width 0.5s;
+}
+
+.hero-item img:hover{
+    width: 101%;
+    
+}
+
+.hero-item h5 {
+    position: relative;
+    z-index: 10;
+    top: -30px;
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.2s;
+
+}
+
+.hero-item h5:hover {
+    color: #89041b;
+}
+
+body > div > div > a {
+    text-decoration: none;
+}
+
+
+/*  -------------- Products section Style -------------- */
+
+.products {
+    background-image: url("bg-productos.png");
+    background-color: black;
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.products-info {
+    display: flex;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+}
+
+.list{
+    list-style: none;
+    padding: 20px 40px;
+    margin: auto;
+}
+
+.list li{
+    margin: auto;
+    font-family: sans-serif;
+    line-height: 1.9em;
+    font-size: 15px;
+    color: #999;
+}
+
+.li-white {
+    color: white !important;
+    transition: color 0.5s;
+}
+
+.list li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+/*  -------------- Footer Section -------------- */
+
+.bottom {
+    display: flex;
+    background-color: #353535;
+    width: 100%;
+}
+
+.bottom-inside {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12%;
+}
+
+.bottom-text {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    padding: 20px 0;
+
+}
+.bottom-logo {
+    color: #fff;
+    width: 30%;
+    height: 60%;
+}
+
+.fa-facebook-square {
+    font-size: 25px;
+    margin-left: 10%;
+    transition: color 0.5s;
+}
+
+.fa-facebook-square:hover {
+    color: #999;
+    cursor: pointer;
+}
+
+/*  -------------- 2nd Footer Section -------------- */
+
+.footer {
+    background-color: #353535;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-text {
+    color: #fff;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.footer-text a {
+    color: #eeaa06;
+    transition: color 0.2s;
+
+}
+
+
+.clickaqui:hover {
+    color: #f1ca6f;
+    cursor: pointer;
+}
+
+}
+
